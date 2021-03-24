@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/jquery-3.5.1.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="icon" href="https://www.clipartmax.com/png/small/203-2035820_123-icon-numbers-icon.png">
+    <title>
+        {{title}}
+    </title>
+</head>
+
+<body>
+    {{>header}}
+
+    <div class="container">
+        <div class="col-md-6 col-sm-6">
+            <div>
+                <h5>Select option</h5>
+            </div>
+            <form>
+                <div class="form-group">                    
+                    <label>
+                        <input name="mode" type="radio" value="check" checked>
+                        Check palindrome
+                    </label><br>
+                    <label>
+                        <input name="mode" type="radio" value="make">                        
+                        Make palindrome
+                    </label>
+                </div>
+                <div>
+                    <h5>Enter a number to check if palindrome</h5>
+                </div>  
+                <div class="form-group has-search">
+                    <span class="fa fa-search form-control-feedback"></span>
+                    <input id="givenNumber" type="number" class="form-control" placeholder="Check number" required>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-md-9 forecast-report">
+            <p id="msg_1"></p>
+            <p id="msg_2"></p>
+        </div>
+    </div>
+
+    {{>footer}}
+
+    <script src="https://kit.fontawesome.com/39581b0884.js" crossorigin="anonymous"></script>
+    <script src="/js/client.js"></script>
+
+</body>
+
+</html>
